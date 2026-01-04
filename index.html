@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Доступная интерактивная фотогалерея</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #image {
+            width: 400px;
+            height: 300px;
+            border: 2px solid #333;
+            text-align: center;
+            line-height: 300px;
+            margin-bottom: 20px;
+            background-color: #eee;
+        }
+
+        #gallery img {
+            width: 100px;
+            height: 75px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body onload="addTabFocus()">
+
+    <h1>Интерактивная фотогалерея</h1>
+
+    <div id="image">
+        Наведите курсор или используйте Tab
+    </div>
+
+    <div id="gallery">
+        <img src="images/img1.jpg"
+             alt="Горный пейзаж"
+             onmouseover="upDate(this)"
+             onmouseleave="unDo()"
+             onfocus="upDate(this)"
+             onblur="unDo()">
+
+        <img src="images/img2.jpg"
+             alt="Лесная тропинка"
+             onmouseover="upDate(this)"
+             onmouseleave="unDo()"
+             onfocus="upDate(this)"
+             onblur="unDo()">
+
+        <img src="images/img3.jpg"
+             alt="Морской берег"
+             onmouseover="upDate(this)"
+             onmouseleave="unDo()"
+             onfocus="upDate(this)"
+             onblur="unDo()">
+
+        <img src="images/img4.jpg"
+             alt="Город ночью"
+             onmouseover="upDate(this)"
+             onmouseleave="unDo()"
+             onfocus="upDate(this)"
+             onblur="unDo()">
+
+        <img src="images/img5.jpg"
+             alt="Закат в пустыне"
+             onmouseover="upDate(this)"
+             onmouseleave="unDo()"
+             onfocus="upDate(this)"
+             onblur="unDo()">
+
+        <img src="images/gori.jpg"
+             alt="Заснеженные горы"
+             onmouseover="upDate(this)"
+             onmouseleave="unDo()"
+             onfocus="upDate(this)"
+             onblur="unDo()">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
