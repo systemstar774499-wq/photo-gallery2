@@ -52,3 +52,25 @@ h1 {
 #gallery img:hover {
     border-color: #005fcc;
 }
+@media screen and (min-width: 772px) {
+
+    /* Галерея — flex уже есть, оставляем */
+    #gallery {
+        justify-content: space-between;
+    }
+
+    /* Миниатюры — 2 в ряд */
+    #gallery img {
+        width: 45%;
+        height: auto;
+        max-height: 30vh;
+    }
+}
+
+@media screen and (min-width: 998px) {
+
+    #gallery img {
+        width: 30%;
+    }
+}
+
